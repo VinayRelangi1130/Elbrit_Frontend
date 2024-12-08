@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elbrit Assignment</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alata&family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Aref+Ruqaa+Ink:wght@400;700&family=Asap:ital,wght@0,100..900;1,100..900&family=Average&family=Bebas+Neue&family=Convergence&family=Cormorant+Upright:wght@300;400;500;600;700&family=Francois+One&family=Goudy+Bookletter+1911&family=Gowun+Batang&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Monda:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&family=Staatliches&display=swap");
+
+      .parent_container {
+        width: 100vw;
+        height: 3580px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo {
+        height: 100%;
+        width: 50%;
+      }
+      .logo_con {
+        height: 2%;
+        width: 99%;
+      }
+
+      .first_con {
+        width: 97%;
+        height: 32%;
+        background-color: #e2f5fb;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .heading {
+        color: #003569;
+        font-size: 155px;
+        font-family: jost;
+        font-weight: bold;
+      }
+      .s_con {
+        display: flex;
+        flex-direction: row;
+        height: 60%;
+        width: 75%;
+      }
+      .supplies {
+        font-family: Jost;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #727272;
+      }
+      .get {
+        color: #17414f;
+        font-family: Jost;
+        font-size: 34px;
+        font-weight: 500;
+      }
+      .explore_btn {
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #17414f;
+        text-align: center;
+        color: #ffffff;
+        width: 189.14px;
+        height: 56px;
+        padding: 0px 45px 0px 45px;
+        border-radius: 30px 30px 30px 30px;
+      }
+      .mini1 {
+        width: 25%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+      }
+      .mini2 {
+        width: 40%;
+        height: 85%;
+        background-color: #ffe9b5;
+        border-top-left-radius: 130px;
+        border-bottom-right-radius: 130px;
+        margin-right: 6%;
+      }
+      .proboitic_img {
+        width: 99%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+        top: -19%;
+      }
+      .mini3 {
+        width: 35%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 8%;
+        margin-left: 0%;
+      }
+      .con2 {
+        display: flex;
+        flex-direction: row;
+        width: 67%;
+        height: 20%;
+        justify-content: space-between;
+      }
+      .con1 {
+        display: flex;
+        flex-direction: row;
+        width: 53%;
+        height: 20%;
+        justify-content: space-between;
+      }
+
+      .con3 {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 20%;
+        justify-content: space-between;
+      }
+      .para {
+        font-family: Jost;
+        font-size: 26px;
+        font-weight: 600;
+        color: #17414f;
+      }
+      .desc {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #727272;
+      }
+
+      .img_1 {
+        width: 75px;
+        height: 74px;
+      }
+      .third_con {
+        width: 75%;
+        height: 15%;
+        padding: 0px 52px 0px 52px;
+        border-radius: 80px 80px 80px 80px;
+        background-color: #17414f;
+        position: relative;
+        top: -5%;
+      }
+      .con3_1 {
+        width: 20%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        top: -10%;
+      }
+      .con3_12 {
+        width: 20%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        top: -10%;
+      }
+      .con3_13 {
+        width: 20%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        top: -10%;
+      }
+      .img_2 {
+        width: 130px;
+        height: 130px;
+      }
+      .para2 {
+        font-family: Jost;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.07999999821186066px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .desc2 {
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.07999999821186066px;
+        text-align: center;
+        color: #d9d9d9;
+      }
+      .con3_2 {
+        width: 20%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+      }
+      .four {
+        width: 80%;
+        height: 15%;
+      }
+      .blog {
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.07999999821186066px;
+      }
+      .news {
+        font-family: Jost;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 52px;
+        margin-bottom: 2%;
+      }
+      .fifth_con {
+        width: 91%;
+        height: 21%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .overall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .final_con {
+        width: 99%;
+        height: 10%;
+        background-color: #17414f;
+      }
+      .l1 {
+        display: flex;
+        flex-direction: row;
+        width: 14%;
+        padding: 16px 131.98px 16px 50px;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #215d72;
+        align-items: center;
+        margin-left: 6%;
+        justify-content: space-between;
+      }
+      .l2 {
+        display: flex;
+        flex-direction: row;
+        width: 17%;
+        padding: 16px 131.98px 16px 50px;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #215d72;
+        align-items: center;
+        margin-left: 4%;
+        justify-content: space-between;
+      }
+      .last {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        margin-top: 2%;
+      }
+      .pa {
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent_container">
+      <div class="logo_con">
+        <img src="./image.svg" class="logo" />
+      </div>
+
+      <div class="first_con">
+        <div class="heading">Essential Vitamins</div>
+
+        <div class="s_con">
+          <div class="mini1">
+            <p class="supplies">Online Medical Supplies</p>
+            <p class="get">Get Your Vitamins <br />& Minerals</p>
+            <button class="explore_btn">Explore</button>
+          </div>
+
+          <div class="mini2">
+            <img src="./2023, 15_42_43 GMT+3.svg" class="proboitic_img" />
+          </div>
+
+          <div class="mini3">
+            <div class="con1">
+              <img src="./Frame-8363.png.svg" class="img_1" />
+              <div style="text-align: left">
+                <div class="para">Vitamins</div>
+                <div class="desc">
+                  Increased Vitamins and <br />minerals in your diet
+                </div>
+              </div>
+            </div>
+
+            <div class="con2">
+              <img src="./Frame-8364.png.svg" class="img_1" />
+              <div style="text-align: left">
+                <div class="para">Weight Loss</div>
+                <div class="desc">
+                  Weight Loss <br />
+                  Find scientifically proven solutions
+                </div>
+              </div>
+            </div>
+
+            <div class="con3">
+              <img src="./Frame-8365.png.svg" class="img_1" />
+              <div style="text-align: left">
+                <div class="para">Functional Foods</div>
+                <div class="desc">
+                  Functional Foods <br />
+                  From protein powers to baby formula
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            width: 83%;
+            margin-left: 2%;
+          "
+        >
+          <div
+            style="
+              background: grey;
+              width: 40px;
+              height: 40px;
+              border-radius: 40px 40px 40px 40px;
+            "
+          ></div>
+          <div
+            style="
+              background-color: grey;
+              width: 40px;
+              height: 40px;
+              border-radius: 40px 40px 40px 40px;
+            "
+          ></div>
+        </div>
+      </div>
+
+      <div class="third_con">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: -5%;
+            margin-bottom: 2%;
+          "
+        >
+          <div class="con3_1">
+            <img src="./a.item-icon-e.svg" class="img_2" />
+            <div class="para2">Clinically studied</div>
+            <div class="desc2">
+              All products that we offer have <br />
+              undergone lab and safety tests
+            </div>
+          </div>
+          <div class="con3_12">
+            <img src="./12.svg" class="img_2" />
+            <div class="para2">Vegetarian Friendly</div>
+            <div class="desc2">
+              We have a wide selection of vegetarian <br />
+              products to meet your needs
+            </div>
+          </div>
+          <div class="con3_13">
+            <img src="./13.svg" class="img_2" />
+            <div class="para2">Made in India</div>
+            <div class="desc2">
+              Shop local and explore health products <br />
+              made right here in India
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+          "
+        >
+          <div class="con3_2">
+            <img src="./ship.svg" class="img_2" />
+            <div class="para2">Free shipping</div>
+            <div class="desc2">
+              We deliver to your door with no <br />
+              shipping costs on your orders
+            </div>
+          </div>
+          <div class="con3_2">
+            <img src="./ris.svg" class="img_2" />
+            <div class="para2">No Risk</div>
+            <div class="desc2">
+              We ensure that all products are safe <br />
+              and within their use-by date
+            </div>
+          </div>
+          <div class="con3_2">
+            <img src="./gmo.svg" class="img_2" />
+            <div class="para2">GMO free</div>
+            <div class="desc2">
+              Natural, no modified products and <br />
+              derivatives for those who need it
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="four">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <div><img src="./ing.svg" /></div>
+          <div><img src="./vit c.svg" /></div>
+          <div><img src="./b3.svg" /></div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <div><img src="./mg.svg" /></div>
+          <div><img src="./hy.svg" /></div>
+          <div><img src="./lac.svg" /></div>
+          <div><img src="./sym.svg" /></div>
+        </div>
+      </div>
+
+      <div
+        style="
+          width: 15%;
+          height: 3%;
+          text-align: center;
+          margin-top: 3%;
+          margin-bottom: 2%;
+        "
+      >
+        <div class="blog">OUR BLOG</div>
+        <div class="news">Latest News</div>
+      </div>
+
+      <div class="fifth_con">
+        <div class="overall">
+          <div><img src="./cap.svg" /></div>
+          <div><img src="./smcap.svg" /></div>
+        </div>
+        <div class="overall">
+          <div><img src="./cap2.svg" /></div>
+          <div><img src="./lg.svg" /></div>
+        </div>
+        <div class="overall">
+          <div><img src="./cap.svg" /></div>
+          <div><img src="./smcap.svg" /></div>
+        </div>
+        <div class="overall">
+          <div><img src="./cap2.svg" /></div>
+          <div><img src="./lg2.svg" /></div>
+        </div>
+      </div>
+
+      <div class="final_con">
+        <div class="last">
+          <div class="l1">
+            <img src="./call.svg" style="width: 60px; height: 61px" />
+            <div>
+              <div
+                style="
+                  font-family: Jost;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  line-height: 26px;
+                "
+              >
+                Phone Number
+              </div>
+
+              <div
+                style="
+                  font-family: Jost;
+                  font-size: 20px;
+                  font-weight: 500;
+                  color: #ffffff;
+                  line-height: 28px;
+                "
+              >
+                +974 3118 1843
+              </div>
+            </div>
+          </div>
+
+          <div class="l2">
+            <img src="./mail.svg" style="width: 60px; height: 61px" />
+            <div>
+              <div
+                style="
+                  font-family: Jost;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  line-height: 26px;
+                "
+              >
+                Email Address
+              </div>
+
+              <div
+                style="
+                  font-family: Jost;
+                  font-size: 20px;
+                  font-weight: 500;
+                  color: #ffffff;
+                  line-height: 28px;
+                "
+              >
+                Elbrithcqhr@gmail.com
+              </div>
+            </div>
+          </div>
+
+          <div class="l2">
+            <img src="./loc.svg" style="width: 60px; height: 61px" />
+            <div>
+              <div
+                style="
+                  font-family: Jost;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  line-height: 26px;
+                "
+              >
+                Email Address
+              </div>
+
+              <div
+                style="
+                  font-family: Jost;
+                  font-size: 20px;
+                  font-weight: 500;
+                  color: #ffffff;
+                  line-height: 28px;
+                "
+              >
+                Elbrithcqhr@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            margin-bottom: 1%;
+            width: 48%;
+            height: 22%;
+            margin-left: 6%;
+            justify-content: space-between;
+            margin-top: 2%;
+          "
+        >
+          <img src="./logoo.svg" />
+          <div class="pa">
+            Your health, physical and emotional well-being is important <br />
+            to us. We are always by your side and have made it even <br />
+            easier for you to find the necessary vitamins.
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            width: 28%;
+            margin-left: 6%;
+            align-items: center;
+            justify-content: space-evenly;
+          "
+        >
+          <div><img src="./ls.svg" /></div>
+          <div
+            style="
+              font-family: Jost;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #ffffff;
+            "
+          >
+            Elbrit Life Sciences Private Limited. C20, BKC, G Block, Mumbai
+            400051
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
